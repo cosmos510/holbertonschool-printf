@@ -15,6 +15,7 @@ To use the custom `printf` function in your C program, follow these steps:
 1. Include the `main.h` header file in your source file.
 2. Call the `_printf` function with the desired format string and optional arguments.
 
+## Example
 ```
 #include "main.h"
 
@@ -24,13 +25,12 @@ int main(void) {
     return 0;
 }
 ```
-## Example
 
 Running the above code will produce the following output:
-
+```
 Hello, world!
 The answer is 42.
-
+```
 
 ## How It Works
 
@@ -40,8 +40,8 @@ The `parse_format` function in `main.c` is responsible for parsing the format st
 
 This project was developed by:
 
-- [Author Name](https://github.com/cosmos510)
-- [Author Name](https://github.com/author_username)
+- [Maxime](https://github.com/cosmos510)
+- [Soufian](https://github.com/author_username)
 
 ## Contributing
 
