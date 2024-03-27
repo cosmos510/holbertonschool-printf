@@ -33,7 +33,13 @@ int print_o(va_list *ptr)
 	int count = 0;
 	unsigned int i = va_arg(*ptr, unsigned int);
 
-	help_o(i, &count);
+	if (i == 0)
+	{
+		_putchar('0');
+		count++;
+	}
+	else
+		help_o(i, &count);
 	return (count);
 }
 /**
@@ -51,9 +57,5 @@ void help_o(unsigned int i, int *pcount)
 		_putchar((i % 8) + '0');
 		(*pcount)++;
 	}
-	if (i == 0)
-	{
-		_putchar('0');
-		(*pcount)++;
-	}
+
 }
