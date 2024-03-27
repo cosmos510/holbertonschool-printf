@@ -1,0 +1,79 @@
+.\" Manpage for printf function implementation
+.TH PRINTF 3 "March 2024" "Custom printf Function Implementation" "User Commands"
+
+.SH NAME
+printf \- format and print data
+
+.SH DESCRIPTION
+The
+.B printf
+function writes output to the standard output (stdout) according to a format string specified by
+.I format
+and any additional arguments.
+
+.SH RETURN VALUE
+Upon successful completion, the
+.B printf
+function returns the number of characters printed (excluding the null byte used to end the output to strings). If an output error is encountered, a negative value is returned.
+
+.SH CONVERSION CHARACTERS
+.B The conversion specifiers and their meanings are:
+.IP -b 
+The unsigned int argument is converted to binary.
+
+.IP -d,i
+The int argument is converted to signed decimal notation.
+
+.IP -c
+The int argument is converted to an unsigned char, and the resulting character is written.
+
+
+.IP -o,u,x,X
+The unsigned int argument is converted to ( ) notation:
+
+unsigned octal: (o).
+
+unsigned decimal: (u).
+
+unsigned hexadecimal: (x and X).
+
+.SH EXAMPLE
+The following example illustrates how to use the
+.B printf
+function in a C program:
+
+.nf
+.RS
+\#include <stdio.h>
+.br
+\#include "main.h"
+.br
+int main(void) {
+.br
+    _printf("Hello, %s!\n", "world");
+.br
+    _printf("The answer is %d.\n", 42);
+.br
+    return 0;
+.br
+}
+.RE
+.fi
+
+.SH SEE ALSO
+.BR printf (1),
+.BR stdio (3),
+.BR stdarg (3)
+
+.SH AUTHOR
+This implementation of
+.B printf
+was developed by [Maxime](https://github.com/cosmos510) and [Soufian](https://github.com/cosmos510.
+
+.SH BUGS
+Please report any bugs or issues to the project's GitHub page.
+
+.SH LICENSE
+This implementation of
+.B printf
+is licensed under the MIT License. See the accompanying LICENSE file for details.
