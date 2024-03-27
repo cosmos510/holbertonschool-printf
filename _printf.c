@@ -13,7 +13,7 @@ int parse_format(const char *format, va_list *ptr, print_f *opt)
 {
 	int i_f, i_opt, count = 0, found = 0;
 
-	if (format == NULL)
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	for (i_f = 0; format[i_f] != '\0'; i_f++)
 	{
@@ -33,14 +33,11 @@ int parse_format(const char *format, va_list *ptr, print_f *opt)
 					found = 1;
 				}
 			}
-			if (found == 0 && format[i_f + 1] != 0)
+			if (found == 0)
 			{
-				_putchar('%'), _putchar(format[i_f + 1]);
+				_putchar('%');
+				_putchar(format[i_f + 1]);
 				count += 2;
-			}
-			else if (found == 0 && format[i_f + 1] == 0)
-			{
-				_putchar('%'), count++;
 			}
 			i_f++;
 		}
