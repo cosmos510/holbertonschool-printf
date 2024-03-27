@@ -2,6 +2,16 @@
 
 This project implements a custom version of the `printf` function in C, providing a simple yet powerful way to format and print text to the standard output.
 
+## Compilation commande 
+```
+$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -Wno-format *.c
+```
+
+## Requierements
+
+Allowed editors: vi, vim, emacs
+All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+
 ## Features
 
 - Supports format specifiers for characters (`%c`), strings (`%s`), and integers (`%d`, `%i`).
@@ -35,6 +45,10 @@ The answer is 42.
 ## How It Works
 
 The `parse_format` function in `main.c` is responsible for parsing the format string, identifying format specifiers, and calling the corresponding printing functions to print the formatted output. Each format specifier is associated with a specific printing function, allowing for modular and efficient processing of the input string.
+
+## Further information
+
+See the man page
 
 ## Authors
 
