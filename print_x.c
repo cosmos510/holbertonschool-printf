@@ -19,14 +19,14 @@ void help_x(unsigned int n, int uppercase, int *pcount)
 		if (remainder < 10)
 		{
 			(*pcount)++;
-			putchar(remainder + '0');
+			_putchar(remainder + '0');
 		}
 		else
 		{
 			if (uppercase == 1)
-				putchar(remainder - 10 + 'A');
+				_putchar(remainder - 10 + 'A');
 			else
-				putchar(remainder - 10 + 'a');
+				_putchar(remainder - 10 + 'a');
 			(*pcount)++;
 		}
 	}
