@@ -18,6 +18,6 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int print_s(va_list *ptr);
 int print_c(va_list *ptr);
-void help_i(int i, int *count);
+void help_i(long int i, int *count);
 int print_i(va_list *ptr);
 #endif
