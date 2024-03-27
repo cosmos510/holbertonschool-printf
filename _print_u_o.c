@@ -48,7 +48,12 @@ void help_o(unsigned int i, int *pcount)
 	if (i != 0)
 	{
 		help_o(i / 8, pcount);
-		putchar((i % 8) + '0');
+		_putchar((i % 8) + '0');
+		(*pcount)++;
+	}
+	if (i == 0)
+	{
+		_putchar('0');
 		(*pcount)++;
 	}
 }
