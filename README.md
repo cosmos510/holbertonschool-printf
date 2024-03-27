@@ -15,7 +15,7 @@ To use the custom `printf` function in your C program, follow these steps:
 1. Include the `main.h` header file in your source file.
 2. Call the `_printf` function with the desired format string and optional arguments.
 
-```c
+```
 #include "main.h"
 
 int main(void) {
@@ -23,7 +23,7 @@ int main(void) {
     _printf("The answer is %d.\n", 42);
     return 0;
 }
-```c
+```
 ## Example
 
 Running the above code will produce the following output:
