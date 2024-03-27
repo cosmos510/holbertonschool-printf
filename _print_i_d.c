@@ -19,7 +19,7 @@ int print_i(va_list *ptr)
  * @i: Integer to be printed.
  * @count: Pointer to the count of characters printed.
  */
-void help_i(int i, int *count)
+void help_i(long int i, int *count)
 {
     if (i < 0)
     {
