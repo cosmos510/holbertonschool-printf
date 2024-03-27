@@ -24,7 +24,7 @@ int print_s(va_list *ptr)
 	if (a == NULL)
 	{
 		_printf("(null)");
-		return (0);
+		return (6);
 	}
 	for (i = 0; a[i] != '\0'; i++)
 	{
