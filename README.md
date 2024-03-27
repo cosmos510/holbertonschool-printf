@@ -16,7 +16,7 @@ To use the custom `printf` function in your C program, follow these steps:
 2. Call the `_printf` function with the desired format string and optional arguments.
 
 ```c
-#include "main.h"
+include "main.h"
 
 int main(void) {
     _printf("Hello, %s!\n", "world");
