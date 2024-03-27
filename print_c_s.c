@@ -19,21 +19,17 @@ int print_c(va_list *ptr)
 int print_s(va_list *ptr)
 {
 	char *a = va_arg(*ptr, char *);
-	char *b = "(Null)";
-	int count = 0, i, j;
+	int count = 0, i;
 
+	if (a == NULL)
+	{
+		_printf("(null)");
+		return (0);
+	}
 	for (i = 0; a[i] != '\0'; i++)
 	{
 		_putchar(a[i]);
 		count++;
-	}
-	if (a == NULL)
-	{
-		for (j = 0; b[j] != '\0'; j++)
-		{
-			_putchar(b[j]);
-			count++;
-		}
 	}
 	return (count);
 }
