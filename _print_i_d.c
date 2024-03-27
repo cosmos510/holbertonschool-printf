@@ -6,10 +6,11 @@
 */
 int print_i(va_list *ptr)
 {
-    int count = 0;
-    unsigned int i = va_arg(*ptr,unsigned int);
-    help_i(i, &count);
-    return (count);
+	int count = 0;
+	int i = va_arg(*ptr, int);
+
+	help_i(i, &count);
+	return (count);
 }
 /**
  * help_i - This function is a helper for print_i.
@@ -21,16 +22,16 @@ int print_i(va_list *ptr)
  */
 void help_i(long int i, int *count)
 {
-    if (i < 0)
-    {
-        _putchar ('-');
-        i = -i;
-        (*count)++;
-    }
-    if (i / 10 != 0)
-    {
-        help_i(i / 10, count);
-    }
-    _putchar(i % 10 + '0');
-    (*count)++;
+	if (i < 0)
+	{
+		_putchar ('-');
+		i = -i;
+		(*count)++;
+	}
+	if (i / 10 != 0)
+	{
+		help_i(i / 10, count);
+	}
+	_putchar(i % 10 + '0');
+	(*count)++;
 }
