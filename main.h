@@ -20,4 +20,12 @@ int print_s(va_list *ptr);
 int print_c(va_list *ptr);
 void help_i(long int i, int *count);
 int print_i(va_list *ptr);
+int print_ui(va_list *ptr);
+void help_ui(unsigned int i, int *pcount);
+int print_o(va_list *ptr);
+void help_o(unsigned int i, int *pcount);
+void help_x(unsigned int n, int uppercase, int *pcount);
+int print_h(va_list *ptr, int uppercase);
+int print_x(va_list *ptr);
+int print_X(va_list *ptr);
 #endif
