@@ -11,8 +11,8 @@
 */
 typedef struct print
 {
-    char symbol;
-    int (*f)(va_list *);
+	char symbol;
+	int (*f)(va_list *);
 } print_f;
 int _printf(const char *format, ...);
 int _putchar(char c);
