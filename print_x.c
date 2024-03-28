@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * help_x - Helper function for printing hexadecimal numbers. It prints
  *          the hexadecimal number n recursively. It updates the count
@@ -44,7 +43,13 @@ int print_h(va_list *ptr, int uppercase)
 	int count = 0;
 	unsigned int i = va_arg(*ptr, unsigned int);
 
-	help_x(i, uppercase, &count);
+	if (i == 0)
+	{
+		_putchar("0");
+		count++;
+	}
+	else
+		help_x(i, uppercase, &count);
 	return (count);
 }
 /**
