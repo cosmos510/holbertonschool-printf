@@ -24,7 +24,5 @@ int print_rev(va_list *ptr)
 		_putchar(s[i]);
 		count++;
 	}
-	_putchar('\n');
-	count--;
 	return (count);
 }
