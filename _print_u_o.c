@@ -1,4 +1,16 @@
 #include"main.h"
+/**
+ * print_ui - This function prints an unsigned integer by utilizing
+ *            the help_ui helper function. It takes a variable
+ *            argument list pointer ptr containing the unsigned
+ *            integer to be printed. It returns the count of
+ *            characters printed.
+ * @ptr: Pointer to the variable argument list containing the
+ *       unsigned integer to be printed.
+ *
+ * Returns:
+ * The count of characters printed.
+ */
 int print_ui(va_list *ptr)
 {
 	int count = 0;
@@ -57,5 +69,4 @@ void help_o(unsigned int i, int *pcount)
 		_putchar((i % 8) + '0');
 		(*pcount)++;
 	}
-
 }
