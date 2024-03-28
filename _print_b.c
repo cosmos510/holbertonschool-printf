@@ -39,7 +39,6 @@ void print_binary(int i, int *pcount)
 	if (i / 2 != 0)
 	{
 		print_binary(i / 2, pcount);
-		(*pcount)++;
 	}
 	_putchar((i % 2) + '0');
 	(*pcount)++;
