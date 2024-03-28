@@ -14,7 +14,7 @@
 int print_b(va_list *ptr)
 {
 	int count = 0;
-	 int i = va_arg(*ptr, int);
+	unsigned int i = va_arg(*ptr,unsigned int);
 
 	if (i == 0)
 	{
@@ -33,7 +33,7 @@ int print_b(va_list *ptr)
  * @pcount: Pointer to the count of characters printed.
  */
 
-void print_binary(int i, int *pcount)
+void print_binary(unsigned int i, int *pcount)
 {
 
 	if (i / 2 != 0)
