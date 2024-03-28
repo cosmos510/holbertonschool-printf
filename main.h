@@ -30,4 +30,6 @@ int print_x(va_list *ptr);
 int print_X(va_list *ptr);
 int print_b(va_list *ptr);
 void print_binary(unsigned int i, int *pcount);
+int print_rev(va_list *ptr);
+
 #endif
