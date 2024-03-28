@@ -8,8 +8,7 @@
  * @ptr: Pointer to the variable argument list containing the
  *       unsigned integer to be printed.
  *
- * Returns:
- * The count of characters printed.
+ * Return: The count of characters printed.
  */
 int print_ui(va_list *ptr)
 {
