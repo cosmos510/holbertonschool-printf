@@ -42,4 +42,5 @@ void print_binary(int i, int *pcount)
 		(*pcount)++;
 	}
 	_putchar((i % 2) + '0');
+	(*pcount)++;
 }
