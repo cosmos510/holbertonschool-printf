@@ -64,4 +64,4 @@ This project was developed by:
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Make sure to follow the project's coding style and conventions.
 
-<img src="https://imgur.com/a/GDGRMVU">
+![flowchart](https://github.com/cosmos510/holbertonschool-printf/assets/159013965/fbeb0b67-9801-44a6-98dd-4b30932318c5)
