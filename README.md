@@ -13,7 +13,7 @@ All the files has to be compiled on Ubuntu 20.04 LTS using gcc, using the option
 
 ## Features
 
-- Supports format specifiers for characters (`%c`), strings (`%s`), integers (`%d`, `%i`), octal(`%o`), hexadecimal (`%x``%X`), and unsigned int(`%u`).
+- Supports format specifiers for characters (`%c`), strings (`%s`), integers (`%d`, `%i`), octal(`%o`), hexadecimal (`%x``%X`), unsigned int(`%u`), binary (`%b`) and reverse string (`%r`)
 - Handles the basic functionality of the `printf` function, including the ability to print formatted output with placeholders.
 - Provides a modular and extensible design, making it easy to add support for additional format specifiers or modify existing functionality.
 
