@@ -64,4 +64,4 @@ This project was developed by:
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request. Make sure to follow the project's coding style and conventions.
 
-https://imgur.com/a/GDGRMVU
+<img src="https://imgur.com/a/GDGRMVU">
