@@ -13,7 +13,7 @@
 int print_rev(va_list *ptr)
 {
 	int len = 0;
-	int i = 0, count = 0;
+	int i = 0, count = -1;
 	char *s = va_arg(*ptr, char *);
 
 	while (s[len] != '\0')
