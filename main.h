@@ -28,4 +28,6 @@ void help_x(unsigned int n, int uppercase, int *pcount);
 int print_h(va_list *ptr, int uppercase);
 int print_x(va_list *ptr);
 int print_X(va_list *ptr);
+int print_b(va_list *ptr);
+void print_binary(int i, int *pcount);
 #endif
