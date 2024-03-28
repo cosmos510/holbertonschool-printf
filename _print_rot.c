@@ -12,19 +12,19 @@
  **/
 int rot13(va_list *ptr)
 {
-	char in[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
+	char in[57] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L',
 				 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
 				 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
 				 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v',
-				 'w', 'x', 'y', 'z'};
-	char out[52] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
+				 'w', 'x', 'y', 'z', ' ', '!', '_', ',', '.'};
+	char out[57] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y',
 				 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
 				 'L', 'M', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w',
 				 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
-				 'j', 'k', 'l', 'm'};
+				 'j', 'k', 'l', 'm', ' ', '!', '_', ',', '.'};
 	int i = 0;
 	int count, pcount;
-	int num = 52;
+	int num = 57;
 	char *s = va_arg(*ptr, char *);
 
 	while (s[i])
