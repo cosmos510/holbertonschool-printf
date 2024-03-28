@@ -13,14 +13,17 @@
 int print_rev(va_list *ptr)
 {
 	int len = 0;
-	int i = 0;
+	int i = 0, count = 0;
 	char *s = va_arg(*ptr, char *);
 
 	while (s[len] != '\0')
 		len++;
 	len = len - 1;
 	for (i = len; i >= 0; i--)
+	{
 		_putchar(s[i]);
+		count++;
+	}
 	_putchar('\n');
-	return (len);
+	return (count);
 }
