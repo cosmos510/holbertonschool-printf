@@ -45,7 +45,7 @@ int print_h(va_list *ptr, int uppercase)
 
 	if (i == 0)
 	{
-		_putchar("0");
+		_putchar('0');
 		count++;
 	}
 	else
