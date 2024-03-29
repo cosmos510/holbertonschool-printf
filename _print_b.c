@@ -14,7 +14,7 @@
 int print_b(va_list *ptr)
 {
 	int count = 0;
-	unsigned int i = va_arg(*ptr,unsigned int);
+	unsigned int i = va_arg(*ptr, unsigned int);
 
 	if (i == 0)
 	{
